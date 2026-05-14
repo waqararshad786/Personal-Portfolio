@@ -32,7 +32,7 @@ app.use(express.json());
 
 // Serve static files (e.g., CV PDF)
 app.use('/uploads', express.static(path.join(__dirname, 'public')));
-
+app.use('/uploads', express.static('uploads'));
 // Routes
 app.use('/api/projects', projectRoutes);
 app.use('/api/contact', contactLimiter, contactRoutes);

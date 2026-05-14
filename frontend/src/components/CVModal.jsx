@@ -4,7 +4,7 @@ const CVModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   // Use backend URL (make sure your backend serves the PDF at /uploads/Waqar_CV.pdf)
-  const pdfUrl = 'http://localhost:5000/uploads/Waqar_CV.pdf';
+  const pdfUrl = `${import.meta.env.VITE_API_URL}/uploads/Waqar_CV.pdf`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" onClick={onClose}>
