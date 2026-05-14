@@ -3,7 +3,7 @@ import { submitContact } from '../controllers/contactController.js';
 
 const router = express.Router();
 
-// Only POST for contact form submission
+// POST /api/contact - Submit contact form
 router.post('/', submitContact);
 
 export default router;
