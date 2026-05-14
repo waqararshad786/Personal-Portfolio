@@ -3,8 +3,8 @@ import React from 'react';
 const CVModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  // Use backend URL (make sure your backend serves the PDF at /uploads/Waqar_CV.pdf)
-  const pdfUrl = `${import.meta.env.VITE_API_URL}/uploads/Waqar_CV.pdf`;
+  // ✅ Use your LIVE Render backend URL
+  const pdfUrl = `https://personal-portfolio-1-xmhb.onrender.com/uploads/Resume%20-%20Waqar%20(1).pdf`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" onClick={onClose}>
